@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="body">
+    <button class="btn">
+      <span class="span1">Hover Me</span>
+      <span class="span2 invisible">Hovered 😎</span>
+    </button>
+  </body>
+
+  <script>
+    document.querySelector(".btn").addEventListener("mouseover", () => {
+      document.querySelector(".body").classList.add("blur");
+      document.querySelector(".span1").classList.add("invisible");
+      document.querySelector(".span2").classList.remove("invisible");
+    });
+    document.querySelector(".btn").addEventListener("mouseout", () => {
+      document.querySelector(".body").classList.remove("blur");
+      document.querySelector(".span1").classList.remove("invisible");
+      document.querySelector(".span2").classList.add("invisible");
+    });
+  </script>
+</html>

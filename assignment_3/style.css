@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./bg.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  transition: all 0.5s;
+}
+button {
+  padding: 1.5rem 3rem;
+  background-color: #001;
+  border: none;
+  color: #fefefe;
+  font-size: 2.5rem;
+  transition: all 0.5s;
+
+  z-index: 100;
+
+  overflow: hidden;
+}
+
+button:hover {
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+
+  border-image-source: linear-gradient(to right, #f2f, #f42);
+  cursor: pointer;
+  transform: translateY(-0.5rem);
+  box-shadow: 0 5px 10px 3px #000;
+}
+.blur {
+  backdrop-filter: blur(0.5rem);
+}
+
+.invisible {
+  display: none;
+}
