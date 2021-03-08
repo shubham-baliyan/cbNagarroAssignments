@@ -1,0 +1,8 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M109 65H21" stroke="white" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M65 21V109" stroke="white" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M65 109C89.3005 109 109 89.3005 109 65C109 40.6995 89.3005 21 65 21C40.6995 21 21 40.6995 21 65C21 89.3005 40.6995 109 65 109Z" stroke="white" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M65 109C56.0417 109 40 89.3005 40 65C40 40.6995 55.875 21 65 21" stroke="white" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M65 109C73.9583 109 90 89.3005 90 65C90 40.6995 74.125 21 65 21" stroke="white" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M65 21C89.3005 21 109 40.6995 109 65C109 89.3005 89.3005 109 65 109" stroke="white" stroke-width="4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
