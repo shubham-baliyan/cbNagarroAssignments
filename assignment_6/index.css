@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+  color: #222;
+}
+
+.body {
+  background: #12c2e9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f64f59,
+    #c471ed,
+    #12c2e9
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #80ff72,
+    #7ee8fa,
+    #12c2e9
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.input-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input {
+  padding: 10px 20px;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  width: 70%;
+  box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.2);
+}
+.btn {
+  width: 30%;
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 10px 20px;
+  box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.2);
+
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: rgb(129, 245, 129);
+}
+.list {
+  list-style: none;
+  padding: 50px;
+}
+.heading {
+  text-align: center;
+  color: #fff;
+  font-size: 56px;
+  margin: 30px 0;
+}
+.container {
+  width: 600px;
+  margin: 200px auto;
+  padding: 10px 50px;
+  padding-bottom: 50px;
+  border-radius: 5px;
+  box-shadow: 0 5px 50px 5px #7ee8fa;
+
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.list-item {
+  margin-top: 10px;
+  display: flex;
+  width: 70%;
+  font-size: 20px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #fefefe;
+  padding: 5px;
+}
+.edit {
+  margin-left: auto;
+  color: #222;
+  background-color: #ffc107;
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+}
+.button {
+  background-color: #cc0000;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  padding: 5px 15px;
+  margin-left: 10px;
+  box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.2);
+  color: white;
+}
