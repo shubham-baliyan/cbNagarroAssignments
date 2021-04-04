@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+}
+
+body {
+  font-family: inherit;
+  background-image: url("./bg.jpg");
+  color: white;
+  letter-spacing: 5px;
+}
+.input {
+  margin: 0 auto;
+}
+.header {
+  display: flex;
+
+  padding: 5rem 10rem;
+}
+#search {
+  width: 50rem;
+  border-radius: 5rem;
+  outline: none;
+  border: none;
+  padding: 1rem 3rem;
+  font-size: 2rem;
+  background-color: #fff;
+}
+.searchBtn {
+  padding: 0.5rem 2rem;
+  border: none;
+  font-family: inherit;
+  outline: none;
+  cursor: pointer;
+  font-size: 2rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  margin-left: 2rem;
+}
+.weather {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem 5rem;
+}
+
+.city {
+  display: flex;
+  align-items: center;
+}
+.cityName {
+  font-size: 5.5rem;
+  margin-left: 2rem;
+}
+.temp {
+  font-size: 10rem;
+  text-shadow: 2px 2px #222;
+}
+.cond {
+  font-size: 4rem;
+}
+
+.minMax {
+  font-size: 5rem;
+  text-shadow: 2px 2px #222;
+}
+
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 50%;
+  }
+  .header {
+    padding: 3rem 7rem;
+  }
+  #search {
+    width: 20rem;
+  }
+}
