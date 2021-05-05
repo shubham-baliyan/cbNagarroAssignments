@@ -1,0 +1,68 @@
+<%- include("../partials/header")%> <%- include("../partials/navbar")%>
+
+<div class="container p-3">
+  <div class="row m-3">
+    <div class="col-xs-12 col-sm-8 p-3">
+      <h2 class="heading-2 my-2">Edit Your Blog</h2>
+      <form id="form">
+        <div class="my-3">
+          <label for="title" class="form-label">Title</label>
+          <input
+            type="text"
+            class="form-control"
+            id="title"
+            aria-describedby="emailHelp"
+            name="title"
+            value="<%= blog.title %>"
+          />
+        </div>
+        <div class="my-3">
+          <label for="author" class="form-label">Author</label>
+          <input
+            type="text"
+            class="form-control"
+            id="author"
+            aria-describedby="emailHelp"
+            name="author"
+            value="<%= blog.author %>"
+          />
+        </div>
+        <div class="my-3">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >Description</label
+          >
+          <textarea
+            class="form-control"
+            name="description"
+            id="exampleFormControlTextarea1"
+            rows="3"
+          >
+<%= blog.description %></textarea
+          >
+        </div>
+
+        <button class="btn btn-outline-primary blog__button w-50">
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+<script>
+  const form = document.getElementById("form");
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const blog = "<%-blog._id%>";
+    console.log(blog);
+    const author = e.target.elements.author.value;
+    const title = e.target.elements.title.value;
+    const description = e.target.elements.description.value;
+    console.log(`/blog/${blog}`);
+    axios
+      .patch(`/blog/${blog}`, { author, title, description })
+      .then((res) => {
+        document.location.href = "/";
+      })
+      .catch((err) => consol.log(err));
+  });
+</script>

@@ -1,0 +1,45 @@
+<%- include("../partials/header")%> <%- include("../partials/navbar")%>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-xs-6 my-5">
+      <h2 class="heading-2 my-3">Add Blog</h2>
+      <form action="/blog" method="POST" class="createForm">
+        <div class="mb-3">
+          <label for="title" class="form-label">Title</label>
+          <input
+            type="text"
+            class="form-control"
+            id="title"
+            aria-describedby="emailHelp"
+            name="title"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="author" class="form-label">Author</label>
+          <input
+            type="text"
+            class="form-control"
+            id="author"
+            aria-describedby="emailHelp"
+            name="author"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >Description</label
+          >
+          <textarea
+            class="form-control"
+            name="description"
+            id="exampleFormControlTextarea1"
+            rows="3"
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-outline-primary mt-3 w-100">
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
